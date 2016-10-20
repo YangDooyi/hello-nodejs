@@ -1,0 +1,15 @@
+{
+  "name": "hello-nodejs",
+  "version": "0.1.1020",
+  "description": "say hello and show hostname",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "keywords": [
+    "nodejs",
+    "helloworld"
+  ],
+  "author": "InGee Kim",
+  "license": "ISC"
+}
