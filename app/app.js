@@ -1,7 +1,7 @@
 var http = require('http');
 var os = require('os');
 
-var msg = '<h1>Hello World, my name is ' + os.hostname() +'</h1>';
+var msg = '<h1>Hello World,<br/>my hostname is ' + os.hostname() +'</h1>';
 msg += '<p><ul>';
 var ifaces = os.networkInterfaces();
 var ifnames = Object.keys(ifaces);
