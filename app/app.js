@@ -1,7 +1,8 @@
 var http = require('http');
 var os = require('os');
 
-var msg = '<h1>Hello World,<br/>my hostname is ' + os.hostname() +'</h1>';
+var msg = '<html><body>';
+msg += '<h1>Hello World,<br/>my hostname is ' + os.hostname() +'</h1>';
 msg += '<p><ul>';
 var ifaces = os.networkInterfaces();
 var ifnames = Object.keys(ifaces);
@@ -14,6 +15,7 @@ for (var ifname of ifnames) {
   }
 }
 msg += '</ul></p>';
+msg += '</body></html>';
 var server = http.createServer(function(request, response) {
     response.end(msg);
 });
